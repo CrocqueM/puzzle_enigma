@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 MEGA CHALLENGE ULTIME 🎯</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    
+    <div class="chaos-container">
+        <header class="flashy-header">
+            <h1 class="rainbow-text">🔥 TROUVEZ LE FLAG ULTIME 🔥</h1>
+            <div class="fake-flag">FLAG{definitely_not_here}</div>
+            <!-- Adding more header chaos -->
+            <div class="header-chaos">
+                <button onclick="headerExplosion()">💥 EXPLOSION</button>
+                <button onclick="createFloatingButtons()">🎈 FLOAT</button>
+                <button onclick="screenShake()">🌪️ SHAKE</button>
+                <button onclick="colorBomb()">🌈 COLOR BOMB</button>
+                <button onclick="textRain()">🌧️ TEXT RAIN</button>
+            </div>
+        </header>
+
+        <div class="button-chaos">
+            <button class="spawn-btn" onclick="spawnRandomButtons()">🎲 SPAWN BUTTONS</button>
+            <button class="fake-btn" onclick="showFakeFlag()">🏴 GET FLAG</button>
+            <button class="hydra-btn" onclick="createHydraButtons()">🐍 HYDRA MODE</button>
+            <button class="popup-btn" onclick="showRandomPopup()">💥 POPUP</button>
+            <button class="carousel-btn" onclick="addCarousel()">🎠 CAROUSEL</button>
+            <!-- Adding 15 more chaotic buttons -->
+            <button onclick="matrixRain()">🔢 MATRIX</button>
+            <button onclick="fakeLoading()">⏳ LOADING</button>
+            <button onclick="glitchMode()">📺 GLITCH</button>
+            <button onclick="popupChain()">🔗 POPUP CHAIN</button>
+            <button onclick="buttonVirus()">🦠 VIRUS</button>
+            <button onclick="fakeHack()">💻 HACK</button>
+            <button onclick="confettiExplosion()">🎊 CONFETTI</button>
+            <button onclick="mirrorMode()">🪞 MIRROR</button>
+            <button onclick="invisibleButtons()">👻 INVISIBLE</button>
+            <button onclick="buttonMaze()">🌀 MAZE</button>
+            <button onclick="fakeError()">❌ ERROR</button>
+            <button onclick="randomTeleport()">🌀 TELEPORT</button>
+            <button onclick="buttonSwarm()">🐝 SWARM</button>
+            <button onclick="fakeProgress()">📊 PROGRESS</button>
+            <button onclick="chaosMode()">🔥 CHAOS MAX</button>
+        </div>
+
+        <div id="dynamic-content"></div>
+        <div id="floating-zone"></div>
+        <div id="popup-zone"></div>
+
+        <!-- Adding multiple carousels and more fake content -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <span class="fake-code">FLAG{fake_carousel_1}</span>
+                    <div class="icon">🎯</div>
+                </div>
+                <div class="carousel-item">
+                    <span class="fake-code">base64: RkxBR3tmYWtlfQ==</span>
+                    <div class="icon">🔐</div>
+                </div>
+                <div class="carousel-item">
+                    <span class="fake-code">md5: 5d41402abc4b2a76b9719d911017c592</span>
+                    <div class="icon">🧮</div>
+                </div>
+                <div class="carousel-item">
+                    <span class="fake-code">FLAG{not_in_carousel}</span>
+                    <div class="icon">🎪</div>
+                </div>
+                <div class="carousel-item">
+                    <span class="fake-code">FLAG{carousel_trap_2}</span>
+                    <div class="icon">🎭</div>
+                </div>
+                <div class="carousel-item">
+                    <span class="fake-code">FLAG{spinning_fake}</span>
+                    <div class="icon">🌀</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-chaos">
+            <!-- Removing all hints as requested -->
+            <div class="fake-clue">
+                <h3>🔍 ZONE #1</h3>
+                <code>FLAG{maybe_here_but_no}</code>
+                <button onclick="fakeClueAction(1)">ACTIVER</button>
+            </div>
+            <div class="fake-clue">
+                <h3>🔍 ZONE #2</h3>
+                <code><!-- FLAG{fake_comment} --></code>
+                <button onclick="fakeClueAction(2)">ACTIVER</button>
+            </div>
+            <div class="fake-clue">
+                <h3>🔍 ZONE #3</h3>
+                <code>const flag = "FLAG{js_trap}";</code>
+                <button onclick="fakeClueAction(3)">ACTIVER</button>
+            </div>
+            <div class="fake-clue">
+                <h3>🔍 ZONE #4</h3>
+                <code>FLAG{grid_fake_4}</code>
+                <button onclick="fakeClueAction(4)">ACTIVER</button>
+            </div>
+            <div class="fake-clue">
+                <h3>🔍 ZONE #5</h3>
+                <code>FLAG{grid_fake_5}</code>
+                <button onclick="fakeClueAction(5)">ACTIVER</button>
+            </div>
+            <div class="fake-clue">
+                <h3>🔍 ZONE #6</h3>
+                <code>FLAG{grid_fake_6}</code>
+                <button onclick="fakeClueAction(6)">ACTIVER</button>
+            </div>
+        </div>
+
+        <!-- Adding more distraction zones -->
+        <div class="distraction-zone">
+            <div class="spinning-element">🌀</div>
+            <div class="blinking-text">CLIQUEZ ICI POUR LE FLAG!</div>
+            <div class="fake-progress">
+                <div class="progress-bar"></div>
+                <span>Chargement du flag... 99%</span>
+            </div>
+            <div class="matrix-bg" id="matrix-container"></div>
+            <div class="glitch-text">F̴L̵A̶G̷{̸g̵l̴i̶t̸c̵h̷_̴f̶a̵k̸e̷}̵</div>
+        </div>
+
+        <div class="mega-distraction">
+            <div class="fake-terminal">
+                <div class="terminal-header">SYSTEM TERMINAL</div>
+                <div class="terminal-content">
+                    <div>$ cat flag.txt</div>
+                    <div>FLAG{terminal_fake}</div>
+                    <div>$ ls -la</div>
+                    <div>-rw-r--r-- 1 user user 42 Jan 1 12:00 flag.txt</div>
+                    <div>$ grep -r "FLAG" .</div>
+                    <div>./fake.js:const flag = "FLAG{grep_fake}"</div>
+                </div>
+            </div>
+            <div class="fake-code-editor">
+                <div class="editor-tabs">
+                    <span class="tab active">flag.js</span>
+                    <span class="tab">secret.txt</span>
+                    <span class="tab">hidden.html</span>
+                </div>
+                <div class="editor-content">
+                    <div class="line-numbers">1<br>2<br>3<br>4<br>5</div>
+                    <div class="code-content">
+                        // Real flag is here!<br>
+                        const realFlag = "FLAG{editor_fake}";<br>
+                        console.log(realFlag);<br>
+                        // Or is it?<br>
+                        export default realFlag;
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="chaotic-footer">
+            <p>© 2024 - FLAG{footer_fake} - Tous droits réservés</p>
+            <div class="social-chaos">
+                <span onclick="socialTrap()">🔗</span>
+                <span onclick="socialTrap()">📱</span>
+                <span onclick="socialTrap()">💻</span>
+                <span onclick="socialTrap()">🎮</span>
+                <span onclick="socialTrap()">🎯</span>
+                <span onclick="socialTrap()">🔥</span>
+                <span onclick="socialTrap()">💥</span>
+                <span onclick="socialTrap()">🌀</span>
+            </div>
+        </footer>
+    </div>
+ <!-- FLAG{3d} -->
+    <script src="script.js"></script>
+</body>
+</html>
